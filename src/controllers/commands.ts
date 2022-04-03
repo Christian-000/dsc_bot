@@ -52,6 +52,34 @@ class MsjCommands {
         return await message.channel.send(`El nivel de facha de <@${user.id}> es del ${random}%`)    
     }    
   }
+
+  public jojo(str:string, message:Message) {
+    let nwStr:string = str.toLowerCase();
+    if (nwStr === prefix + "dio"){
+      const embed: MessageEmbed = new MessageEmbed()
+        .setTitle("Dio:")
+        .setColor("GOLD")
+        .setImage("https://c.tenor.com/FsY2SrgLqVUAAAAd/hoho-dio.gif");
+      message.channel.send({ embeds: [embed] });
+      message.channel.send("Para matar a Dio tipea: \">ORA!\"") 
+    }
+    
+    if (str === prefix + "ORA!") {
+      const embed: MessageEmbed = new MessageEmbed()
+        .setTitle("ORAORAORAORAORA!!!!!!!")
+        .setColor("PURPLE")
+        .setImage("https://i.pinimg.com/originals/84/84/13/848413a93a3aee99cd00d84a5a656d35.gif");
+      message.channel.send({ embeds: [embed] });  
+
+      setTimeout(()=>{
+        const nwEmbed: MessageEmbed = new MessageEmbed()
+        .setTitle("Mandaste a Dio al Lobby")
+        .setColor("PURPLE")
+        .setImage("https://i.makeagif.com/media/8-15-2015/mjTRzG.gif");
+      message.channel.send({ embeds: [nwEmbed] });  
+      }, 3000)
+    }
+  }
 }
 
 export default MsjCommands;

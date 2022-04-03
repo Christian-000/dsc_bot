@@ -23,6 +23,7 @@ client.on("messageCreate", async (message: Message) => {
   commands.ping(usrInput, message);
   commands.yugi(usrInput, message);
   commands.fachaLevel(usrInput, message);
+  commands.jojo(usrInput, message);
 });
 
 client.login(process.env.TOKEN);
