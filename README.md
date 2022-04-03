@@ -27,3 +27,6 @@ Con cualquiera de estos comandos logra que Exodia se manifieste.
   >     >fl @mencion
   >     >fachaLevel @mencion
  
+Comando con la escena más mítica de Jojos
+
+>     >dio
